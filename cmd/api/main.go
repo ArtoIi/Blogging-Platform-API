@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	db, err := database.NewMySQLConnection("root", "senha", "127.0.0.1:3306", "blog_db")
+	db, err := database.NewMySQLConnection("root", "senha_poderosa", "localhost:3306", "blog_db")
 
 	if err != nil {
 		log.Fatal("Erro ao conectar no banco através do pacote database:", err)
